@@ -1,0 +1,44 @@
+{
+  "name": "a1vy",
+  "version": "0.0.0",
+  "description": "🤖 I'll do your mundane tasks and I'll love every minute of it",
+  "keywords": [
+    "🤖"
+  ],
+  "author": "omrilotan",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omrilotan/a1vy.git"
+  },
+  "homepage": "https://github.com/omrilotan/a1vy#readme",
+  "main": "index.js",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=dev npm run app",
+    "app": "node --experimental-modules --es-module-specifier-resolution=node app.js",
+    "test": "NODE_ENV=test finjan **/spec.js",
+    "lint": "eslint '*.js' '**/*.js'"
+  },
+  "dependencies": {
+    "@routes/ping": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "errobj": "^2.0.0",
+    "express": "^4.17.1",
+    "levelheaded": "^1.2.0",
+    "module-scope": "^1.0.0"
+  },
+  "devDependencies": {
+    "@omrilotan/eslint-config": "0.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "finjan": "0.0.0-alpha.3a",
+    "sinon": "^7.3.2"
+  }
+}

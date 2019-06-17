@@ -1,0 +1,4 @@
+{
+    "extends": "@omrilotan",
+    "parser": "babel-eslint"
+}

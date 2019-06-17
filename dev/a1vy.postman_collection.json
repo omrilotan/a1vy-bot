@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "5ed46c62-d9a3-4c82-a1a4-f1b0d061f4a3",
+		"name": "a1vy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "GitHub-Hookshot/71faf64"
+					},
+					{
+						"key": "X-GitHub-Delivery",
+						"type": "text",
+						"value": "b8845340-9103-11e9-93ef-a879ff93966a"
+					},
+					{
+						"key": "X-GitHub-Event",
+						"type": "text",
+						"value": "ping"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"zen\": \"Half measures are as bad as nothing at all.\",\n  \"hook_id\": 117675144,\n  \"hook\": {\n    \"type\": \"App\",\n    \"id\": 117675144,\n    \"name\": \"web\",\n    \"active\": true,\n    \"events\": [\n      \"commit_comment\",\n      \"create\",\n      \"delete\",\n      \"issues\",\n      \"issue_comment\",\n      \"label\",\n      \"pull_request\",\n      \"pull_request_review\",\n      \"pull_request_review_comment\",\n      \"push\",\n      \"release\",\n      \"repository\",\n      \"security_advisory\"\n    ],\n    \"config\": {\n      \"content_type\": \"json\",\n      \"insecure_ssl\": \"0\",\n      \"url\": \"https://a1vy.herokuapp.com/hook\"\n    },\n    \"updated_at\": \"2019-06-17T13:27:57Z\",\n    \"created_at\": \"2019-06-17T13:27:57Z\",\n    \"app_id\": 33241\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/hook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
